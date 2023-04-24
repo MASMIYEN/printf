@@ -6,7 +6,7 @@
 #include <stdarg.h>
 
 /**
- * struct convert - a function to define a strct for functions and symbols
+ * struct convert - a function to define a struct for functions and symbols
  *
  * @symb: operator
  * @func: function

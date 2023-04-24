@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	int print_chars;
-	convert_t f_list[] = {
+	convert_t func_list[] = {
 		{"c", print_char},
 		{"s", print_string},
 		{"d", print_integer},
@@ -32,7 +32,7 @@ int _printf(const char *format, ...)
 
 	va_start(arg_list, format);
 
-	print_chars = parser(format, f_list, arg_list);
+	print_chars = parser(format, func_list, arg_list);
 	va_end(arg_list);
 
 	return (print_chars);
