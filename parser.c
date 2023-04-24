@@ -21,7 +21,7 @@ int parser(const char *format, conver_t func_list[], va_list arg_list)
 		if (format[m] == '%')
 		{
 
-			for (n = 0; func_list[j].sym != NULL; n++)
+			for (n = 0; func_list[n].sym != NULL; n++)
 			{
 				if (format[m + 1] == func_list[n].symb[0])
 				{
