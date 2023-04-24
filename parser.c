@@ -23,16 +23,16 @@ int parser(const char *format, conver_t func_list[], va_list arg_list)
 
 			for (n = 0; func_list[j].sym != NULL; n++)
 			{
-				if (format[m + 1] == func_list[n].sym[0])
+				if (format[m + 1] == func_list[n].symb[0])
 				{
-					rVal = func_list[n].f(arg_list);
+					rVal = func_list[n].func(arg_list);
 					if (rVal == -1)
 						return (-1);
 					print_chars += rVal;
 					break;
 				}
 			}
-			if (func_list[n].sym == NULL && format[m + 1] != ' ')
+			if (func_list[n].symb == NULL && format[m + 1] != ' ')
 			{
 				if (format[m + 1] != '\0')
 				{
