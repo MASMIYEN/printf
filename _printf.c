@@ -5,7 +5,7 @@
  *
  * @format: string with all characters
  *
- * Return: prin chars
+ * Return: print chars
  */
 int _printf(const char *format, ...)
 {
@@ -15,8 +15,8 @@ int _printf(const char *format, ...)
 		{"s", print_string},
 		{"d", print_integer},
 		{"i", print_integer},
-		{"u", unsigned_int},
-		{"%", print_percentage},
+		{"u", unsigned_integer},
+		{"%", print_percent},
 		{"b", print_binary},
 		{"r", print_reversed},
 		{"o", print_octal},
