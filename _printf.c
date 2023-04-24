@@ -7,7 +7,7 @@
  *
  * Return: prin chars
  */
-int _printf(const char * format, ...)
+int _printf(const char *format, ...)
 {
 	int print_chars;
 	convert_t f_list[] = {
