@@ -64,14 +64,14 @@ int print_integer(va_list list)
 }
 
 /**
- * unsigned_integer - print an unsigned integer
+ * unsigned_int - print an unsigned integer
  *
  * @list: a list of arguments
  *
  * Return: numbers count
 */
 
-int unsigned_integer(va_list list)
+int unsigned_int(va_list list)
 {
     unsigned int num = va_arg(list, unsigned int);
 
