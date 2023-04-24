@@ -23,7 +23,7 @@ int parser(const char *format, conver_t func_list[], va_list arg_list)
 
 			for (n = 0; func_list[j].sym != NULL; n++)
 			{
-				if (format[m + 1] == func_list[j].sym[0])
+				if (format[m + 1] == func_list[n].sym[0])
 				{
 					rVal = func_list[n].f(arg_list);
 					if (rVal == -1)
@@ -32,7 +32,7 @@ int parser(const char *format, conver_t func_list[], va_list arg_list)
 					break;
 				}
 			}
-			if (func_list[j].sym == NULL && format[m + 1] != ' ')
+			if (func_list[n].sym == NULL && format[m + 1] != ' ')
 			{
 				if (format[m + 1] != '\0')
 				{
