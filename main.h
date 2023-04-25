@@ -58,7 +58,7 @@ int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
-int print_unsigned(va_list types, char buffer[],
+int print_unsigned_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int print_octal(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
@@ -71,7 +71,7 @@ int print_hexa(va_list types, char map_to[],
 char buffer[], int flags, char flag_ch, int width, int precision, int size);
 
 /* print non printable characters */
-int print_non_printable(va_list types, char buffer[],
+int print_unprintable(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 /* print memory address */
@@ -102,7 +102,7 @@ int write_num(int ind, char bff[], int flags, int width, int precision,
 int write_pointer(char buffer[], int ind, int length,
 	int width, int flags, char padd, char extra_c, int padd_start);
 
-int write_unsgnd(int is_negative, int ind,
+int write_unsigned(int is_negative, int ind,
 char buffer[],
 	int flags, int width, int precision, int size);
 

@@ -56,7 +56,7 @@ int print_pointer(va_list types, char buffer[],
 
 
 /**
- * print_non_printable - Prints ascii codes in hexa
+ * print_unprintable - Prints ascii codes in hexa
  *
  * @types: List of arguments
  * @buffer: Buffer array to handle print
@@ -67,7 +67,7 @@ int print_pointer(va_list types, char buffer[],
  *
  * Return: Number of chars printed
  */
-int print_non_printable(va_list types, char buffer[],
+int print_unprintable(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i = 0, offset = 0;
