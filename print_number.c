@@ -20,7 +20,7 @@ int print_number(va_list args)
 
 	if (n < 0)
 	{
-		len += write_char('-');
+		len += _write_char('-');
 		num = n * -1;
 	}
 	else
@@ -31,7 +31,7 @@ int print_number(va_list args)
 
 	for (; div != 0; )
 	{
-		len += write_char('0' + num / div);
+		len += _write_char('0' + num / div);
 		num %= div;
 		div /= 10;
 	}
@@ -61,7 +61,7 @@ int print_unsgined_number(unsigned int n)
 
 	for (; div != 0; )
 	{
-		len += write_char('0' + num / div);
+		len += _write_char('0' + num / div);
 		num %= div;
 		div /= 10;
 	}

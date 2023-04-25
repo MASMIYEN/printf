@@ -20,7 +20,7 @@ int print_reversed(va_list arg)
 	if (ptr == NULL)
 		return (-1);
 	for (len = 0; ptr[len] != '\0'; len++)
-		write_char(ptr[len]);
+		_write_char(ptr[len]);
 	free(ptr);
 	return (len);
 }
@@ -49,12 +49,12 @@ int rot13(va_list list)
 		{
 			if (str[i] == s[x])
 			{
-				write_char(u[x]);
+				_write_char(u[x]);
 				break;
 			}
 		}
 		if (x == 53)
-			write_char(str[i]);
+			_write_char(str[i]);
 	}
 	return (i);
 }
