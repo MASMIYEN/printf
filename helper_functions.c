@@ -40,7 +40,7 @@ void write_base(char *str)
 	int i;
 
 	for (i = 0; str[i] != '\0'; i++)
-		_write_char(str[i]);
+		write_char(str[i]);
 }
 
 /**
