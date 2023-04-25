@@ -11,26 +11,26 @@
 int _printf(const char *format, ...)
 {
 	int m = 0, *count, *count3;
-	int cntBuffer[2];
-	int cntBuffer3[2];
-	char copyArray[10000];
-	char *copyFormat;
+	int ctbuffer[2];
+	int ctbuffer3[2];
+	char copyarray[10000];
+	char *copyfrmt;
 	va_list args;
 
-	count = &cntBuffer[2];
-	count3 = &cntBuffer[2];
+	count = &ctbuffer[2];
+	count3 = &ctbuffer3[2];
 	count[0] = 0;
 	count[1] = -1;
 	if (format != NULL)
 	{
 		count[1] = 0;
-		copyFormat = _strcpy(copyArray, format);
+		copyfrmt = _strcpy(copyarray, format);
 		va_start(args, format);
-		while (copyFormat[m] != '\0')
+		while (copyfrmt[m] != '\0')
 		{
-			if (copyFormat[m] == '%')
+			if (copyfrmt[m] == '%')
 			{
-				count3 = print_formats(m, copyFormat, args);
+				count3 = print_formats(m, copyfrmt, args);
 				if (count3[1] == -1)
 					return (-1);
 				count[1] += count3[1];
@@ -38,7 +38,7 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				count[1] += _putchar(&copyFormat[1]);
+				count[1] += _putchar(&copyfrmt[1]);
 			}
 			m++;
 		}
