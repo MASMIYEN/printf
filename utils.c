@@ -19,8 +19,8 @@ int is_printable(char c)
  * append_hexa_code - Append ascii
  *
  * @buffer: Array of chars.
- * @i: Index at which to start appending.
- * @ascii_code: ASSCI CODE.
+ * @i: Index to start appending.
+ * @ascii_code: ASCII CODE.
  *
  * Return: Always 3
  */
