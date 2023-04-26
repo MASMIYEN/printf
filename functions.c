@@ -20,7 +20,7 @@ int display_char(va_list types, char buffer[],
 }
 
 /**
- * print_string - Prints a string
+ * display_string - Prints a string
  *
  * @types: List of arguments
  * @buffer: Buffer array
@@ -31,7 +31,7 @@ int display_char(va_list types, char buffer[],
  *
  * Return: Number of chars
  */
-int print_string(va_list types, char buffer[],
+int display_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int length = 0, i;
