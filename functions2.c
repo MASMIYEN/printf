@@ -2,7 +2,7 @@
 
 /****************** PRINT POINTER ******************/
 /**
- * display_pointer - Prints the value of a pointer variable
+ * printf_pointer - Prints the value of a pointer variable
  *
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
@@ -13,7 +13,7 @@
  *
  * Return: Number of chars printed.
  */
-int display_pointer(va_list types, char buffer[],
+int printf_pointer(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char extra_c = 0, padd = ' ';
@@ -56,7 +56,7 @@ int display_pointer(va_list types, char buffer[],
 
 
 /**
- * display_unprintable - Prints ascii codes in hexa
+ * printf_unprintable - Prints ascii codes in hexa
  *
  * @types: List of arguments
  * @buffer: Buffer array to handle print
@@ -67,7 +67,7 @@ int display_pointer(va_list types, char buffer[],
  *
  * Return: Number of chars printed
  */
-int display_unprintable(va_list types, char buffer[],
+int printf_unprintable(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i = 0, offset = 0;
@@ -97,7 +97,7 @@ int display_unprintable(va_list types, char buffer[],
 }
 
 /**
- * display_reverse - Prints reverse string.
+ * printf_reverse - Prints reverse string.
  *
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
@@ -109,7 +109,7 @@ int display_unprintable(va_list types, char buffer[],
  * Return: Numbers of chars printed
  */
 
-int display_reverse(va_list types, char buffer[],
+int printf_reverse(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char *str;
@@ -142,7 +142,7 @@ int display_reverse(va_list types, char buffer[],
 }
 
 /**
- * display_rot13string - Print a string in rot13
+ * printf_rot13string - Print a string in rot13
  *
  * @types: Lista of arguments
  * @buffer: Buffer array to handle print
@@ -153,7 +153,7 @@ int display_reverse(va_list types, char buffer[],
  *
  * Return: Numbers of chars printed
  */
-int display_rot13string(va_list types, char buffer[],
+int printf_rot13string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char x;
