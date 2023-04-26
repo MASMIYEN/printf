@@ -77,7 +77,7 @@ int display_string(va_list types, char buffer[],
 }
 
 /**
- * print_percent - Prints a percent sign
+ * display_percent - Prints a percent sign
  *
  * @types: Lists of arguments
  * @buffer: Buffer array
@@ -88,7 +88,7 @@ int display_string(va_list types, char buffer[],
  *
  * Return: Number of chars
  */
-int print_percent(va_list types, char buffer[],
+int display_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	UNUSED(types);

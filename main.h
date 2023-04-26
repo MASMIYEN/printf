@@ -50,7 +50,7 @@ int display_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int display_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
-int print_percent(va_list types, char buffer[],
+int display_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 /* print numbers */
