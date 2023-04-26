@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_char - Print a char
+ * display_char - Print a char
  *
  * @types: List of arguments
  * @buffer: Buffer array
@@ -11,7 +11,7 @@
  *
  * Return: Number of chars
  */
-int print_char(va_list types, char buffer[],
+int display_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char c = va_arg(types, int);
