@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * get_size - Calculates the size to cast the argument
+ * find_size - Calculates the size to cast the argument
  *
  * @format: Formatted string to print the arguments
  * @i: List of arguments to print.
  *
  * Return: Precision.
  */
-int get_size(const char *format, int *i)
+int find_size(const char *format, int *i)
 {
 	int jeff_i = *i + 1;
 	int size = 0;

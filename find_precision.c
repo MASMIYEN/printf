@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_precision - Calculates the precision for printing
+ * find_precision - Calculates the precision for printing
  *
  * @format: Formatted string to print the arguments
  * @i: List of arguments to print.
@@ -9,7 +9,7 @@
  *
  * Return: Precision.
  */
-int get_precision(const char *format, int *i, va_list list)
+int find_precision(const char *format, int *i, va_list list)
 {
 	int jeff_i = *i + 1;
 	int precision = -1;
