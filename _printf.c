@@ -1,6 +1,6 @@
 #include "main.h"
 
-void printf_buffer(char buffer[], int *buff_ind);
+void printf_buffer(char buffer[], int *buff_index);
 
 /**
  * _printf - Printf function
@@ -12,7 +12,7 @@ void printf_buffer(char buffer[], int *buff_ind);
 int _printf(const char *format, ...)
 {
 	int i, printed = 0, printed_chars = 0;
-	int flags, width, precision, size, buff_ind = 0;
+	int flags, width, precision, size, buff_index = 0;
 	va_list list;
 	char buffer[BUFFER_SIZE];
 
@@ -25,15 +25,15 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] != '%')
 		{
-			buffer[buff_ind++] = format[i];
-			if (buff_ind == BUFFER_SIZE)
-				printf_buffer(buffer, &buff_ind);
+			buffer[buff_index++] = format[i];
+			if (buff_index == BUFFER_SIZE)
+				printf_buffer(buffer, &buff_index);
 			/* write(1, &format[i], 1);*/
 			printed_chars++;
 		}
 		else
 		{
-			printf_buffer(buffer, &buff_ind);
+			printf_buffer(buffer, &buff_index);
 			flags = find_flags(format, &i);
 			width = find_width(format, &i, list);
 			precision = find_precision(format, &i, list);
@@ -47,7 +47,7 @@ int _printf(const char *format, ...)
 		}
 	}
 
-	printf_buffer(buffer, &buff_ind);
+	printf_buffer(buffer, &buff_index);
 
 	va_end(list);
 
@@ -59,7 +59,7 @@ int _printf(const char *format, ...)
  *
  * @buffer: Array of chars
  *
- * @buff_ind: Index to add next char 'the length'.
+ * @buff_index: Index to add next char 'the length'.
  */
 void printf_buffer(char buffer[], int *buff_ind)
 {
