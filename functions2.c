@@ -4,7 +4,7 @@
 /**
  * printf_pointer - Prints the value of a pointer variable
  *
- * @types: List a of arguments
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width
@@ -99,7 +99,7 @@ int printf_unprintable(va_list types, char buffer[],
 /**
  * printf_reverse - Prints reverse string.
  *
- * @types: Lista of arguments
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width
@@ -144,7 +144,7 @@ int printf_reverse(va_list types, char buffer[],
 /**
  * printf_rot13string - Print a string in rot13
  *
- * @types: Lista of arguments
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width

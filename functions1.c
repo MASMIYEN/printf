@@ -84,7 +84,7 @@ int printf_octa(va_list types, char buffer[],
 /**
  * printf_hexadecimal - Prints an unsigned number in hexadecimal notation
  *
- * @types: Lista of arguments
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width
@@ -104,7 +104,7 @@ int printf_hexadecimal(va_list types, char buffer[],
 /**
  * printf_hexa_upper - Prints an unsigned number in upper hexadecimal notation
  *
- * @types: Lista of arguments
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width
@@ -123,7 +123,7 @@ int printf_hexa_upper(va_list types, char buffer[],
 /**
  * printf_hexa - Prints a hexadecimal number in lower or upper
  *
- * @types: Lista of arguments
+ * @types: List of arguments
  * @map_to: Array of values to map the number to
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
