@@ -35,7 +35,7 @@ struct frmt
  * typedef struct frmt frmt_t - Struct op
  *
  * @frmt: The format.
- * @fm_t: The function associated.
+ * @frm_t: The function associated.
  */
 typedef struct frmt frmt_t;
 
