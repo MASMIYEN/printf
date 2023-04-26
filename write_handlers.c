@@ -2,7 +2,8 @@
 
 /**
  * handle_write_char - Prints a string
- * @c: char types.
+ *
+ * @ch: char types.
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags.
  * @width: get width.
@@ -11,9 +12,9 @@
  *
  * Return: Number of chars printed.
  */
-int handle_write_char(char c, char buffer[],
+int handle_write_char(char ch, char buffer[],
 	int flags, int width, int precision, int size)
-{ /* char is stored at left and paddind at buffer's right */
+{ /* char is stored at left and padding at buffer's right */
 	int i = 0;
 	char padd = ' ';
 
@@ -23,7 +24,7 @@ int handle_write_char(char c, char buffer[],
 	if (flags & F_ZERO)
 		padd = '0';
 
-	buffer[i++] = c;
+	buffer[i++] = ch;
 	buffer[i] = '\0';
 
 	if (width > 1)
@@ -51,8 +52,8 @@ int handle_write_char(char c, char buffer[],
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width.
- * @precision: precision specifier
  * @size: Size specifier
+ * @precision: precision specifier
  *
  * Return: Number of chars printed.
  */
