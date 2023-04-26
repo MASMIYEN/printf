@@ -55,14 +55,14 @@ int is_digit(char ch)
 }
 
 /**
- * convert_size_number - Casts a number to specified size
+ * cnvrt_size_num - Casts a number to specified size
  *
  * @num: Number to be casted
  * @size: Number indicating the type to be casted
  *
  * Return: Casted value of num
  */
-long int convert_size_number(long int num, int size)
+long int cnvrt_size_num(long int num, int size)
 {
 	if (size == S_LONG)
 		return (num);
