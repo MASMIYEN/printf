@@ -108,7 +108,7 @@ char buffer[],
 
 /****************** UTILS ******************/
 int is_printable(char);
-int append_hexa_code(char, char[], int);
+int append_hex_code(char, char[], int);
 int is_digit(char);
 
 long int cnvrt_size_num(long int num, int size);
