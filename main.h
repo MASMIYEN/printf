@@ -22,12 +22,12 @@
  * struct frmt - Struct op
  *
  * @frmt: The format.
- * @fn: The function associated.
+ * @fnc: The function associated.
  */
 struct frmt
 {
 	char frmt;
-	int (*fn)(va_list, char[], int, int, int, int);
+	int (*fnc)(va_list, char[], int, int, int, int);
 };
 
 

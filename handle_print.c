@@ -26,7 +26,7 @@ int handle_print(const char *frmt, int *ind, va_list list, char buffer[],
 	};
 	for (i = 0; frmt_types[i].frmt != '\0'; i++)
 		if (frmt[*ind] == frmt_types[i].frmt)
-			return (frmt_types[i].fn(list, buffer, flags, width, precision, size));
+			return (frmt_types[i].fnc(list, buffer, flags, width, precision, size));
 
 	if (frmt_types[i].frmt == '\0')
 	{
