@@ -101,7 +101,7 @@ int display_percent(va_list types, char buffer[],
 }
 
 /**
- * print_int - Print int
+ * display_int - Print int
  *
  * @types: List of arguments
  * @buffer: Buffer array to handle print
@@ -112,7 +112,7 @@ int display_percent(va_list types, char buffer[],
  *
  * Return: Number of chars
  */
-int print_int(va_list types, char buffer[],
+int display_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
@@ -146,7 +146,7 @@ int print_int(va_list types, char buffer[],
 }
 
 /**
- * print_binary - Prints an unsigned number
+ * display_binary - Prints an unsigned number
  *
  * @types: List of arguments
  * @buffer: Buffer array to handle print
@@ -157,7 +157,7 @@ int print_int(va_list types, char buffer[],
  *
  * Return: Numbers of char
  */
-int print_binary(va_list types, char buffer[],
+int display_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	unsigned int n, m, i, sum;
