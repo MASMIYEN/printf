@@ -126,6 +126,7 @@ int write_num(int index, char buffer[],
 			return (write(1, &buffer[1], i - 1) + write(1, &buffer[index], length));
 		}
 		else if (!(flags & F_MINUS) && padding == '0')
+		{
 			if (extra_ch)
 				buffer[--padding_start] = extra_ch;
 			return (write(1, &buffer[padding_start], i - padding_start) +
