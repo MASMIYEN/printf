@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * display_char - Print a char
+ * printf_char - Print a char
  *
  * @types: List of arguments
  * @buffer: Buffer array
@@ -11,7 +11,7 @@
  *
  * Return: Number of chars
  */
-int display_char(va_list types, char buffer[],
+int printf_char(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	char c = va_arg(types, int);
@@ -20,7 +20,7 @@ int display_char(va_list types, char buffer[],
 }
 
 /**
- * display_string - Prints a string
+ * printf_string - Prints a string
  *
  * @types: List of arguments
  * @buffer: Buffer array
@@ -31,7 +31,7 @@ int display_char(va_list types, char buffer[],
  *
  * Return: Number of chars
  */
-int display_string(va_list types, char buffer[],
+int printf_string(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int length = 0, i;
@@ -77,7 +77,7 @@ int display_string(va_list types, char buffer[],
 }
 
 /**
- * display_percent - Prints a percent sign
+ * printf_percent - Prints a percent sign
  *
  * @types: Lists of arguments
  * @buffer: Buffer array
@@ -88,7 +88,7 @@ int display_string(va_list types, char buffer[],
  *
  * Return: Number of chars
  */
-int display_percent(va_list types, char buffer[],
+int printf_percent(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	UNUSED(types);
@@ -101,7 +101,7 @@ int display_percent(va_list types, char buffer[],
 }
 
 /**
- * display_int - Print int
+ * printf_int - Print int
  *
  * @types: List of arguments
  * @buffer: Buffer array to handle print
@@ -112,7 +112,7 @@ int display_percent(va_list types, char buffer[],
  *
  * Return: Number of chars
  */
-int display_int(va_list types, char buffer[],
+int printf_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
@@ -146,7 +146,7 @@ int display_int(va_list types, char buffer[],
 }
 
 /**
- * display_binary - Prints an unsigned number
+ * printf_binary - Prints an unsigned number
  *
  * @types: List of arguments
  * @buffer: Buffer array to handle print
@@ -157,7 +157,7 @@ int display_int(va_list types, char buffer[],
  *
  * Return: Numbers of char
  */
-int display_binary(va_list types, char buffer[],
+int printf_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	unsigned int n, m, i, sum;
