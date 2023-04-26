@@ -38,9 +38,9 @@ int print_unsigned_int(va_list types, char buffer[],
 
 
 /**
- * print_octal - Prints an unsigned number in octal notation
+ * print_octa - Prints an unsigned number in octal notation
  *
- * @types: Lista of arguments
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width
@@ -49,7 +49,7 @@ int print_unsigned_int(va_list types, char buffer[],
  *
  * Return: Number of chars printed
  */
-int print_octal(va_list types, char buffer[],
+int print_octa(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
 
